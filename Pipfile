@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+scikit-learn = "*"
+matplotlib = "*"
+pandas = "*"
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
+graphviz = "*"
+
+[requires]
+python_version = "3.7"
