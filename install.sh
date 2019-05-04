@@ -1,17 +1,12 @@
 #!/bin/bash
 
-if [ -d ~/miniconda3 ]
-then
-    rm -rf ~/miniconda3 ~/.condarc ~/.conda ~/.continuum
-fi
-
 if ! [ -f Miniconda3.sh ]
 then
+    echo "Installing Miniconda..."
     curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o Miniconda3.sh;
     sudo chmod +x Miniconda3.sh
+    ./Miniconda3.sh -b -p $HOME/miniconda3
 fi
 
-./Miniconda3.sh
-source ~/.bashrc
-clear
-echo "done"
+pip install pipenv
+pipenv install scikit-learn pandas jupyter matplotlib graphviz
