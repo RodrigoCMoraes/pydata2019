@@ -12,4 +12,4 @@ If you are using Windows, you can download VirtualBox appliance from this [link]
 
 ## Execute Jupyter Notebook
 
-    pipenv run jupyter-notebook --no-browser
+    pipenv run jupyter-notebook
